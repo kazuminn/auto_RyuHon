@@ -1,0 +1,1 @@
+0 0 * * * /etc/bin/python /var/www/cgi-bin/tosyokan/test.py

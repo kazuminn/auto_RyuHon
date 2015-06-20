@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+
+
+
+
+{% block kotoba %}
+<FONT color="red"><p>{{ koto }}</p></FONT>
+{% endblock %}
+
+
+{% block main %}
+    <form class="form-inline" role="form" method="post" action="create_user">{% csrf_token %}
+                                <div class="form-group">
+                                    <label class="sr-only" for="exampleInputEmail2">Email address</label>
+						<FONT color="#ffffff">ニックネーム<FONT><br>
+						    <input type="text" name="user_id" class="form-control" id="exampleInputEmail2" placeholder="ニックネーム"/><br/>
+						<FONT color="#ffffff">学籍番号　例 e134563<FONT><br>
+						    <input type="text" name="email" class="form-control" id="exampleInputEmail2" placeholder="学籍番号"/><br>
+						<FONT color="#ffffff">総合情報処理センターのパスワード<FONT><br>
+						    <input type="password" name="last_name" class="form-control" id="exampleInputEmail2" placeholder="password"/><br>
+ 						<FONT color="#ffffff">もう一度<FONT><br>
+				          	    <input type="password" name="first_name" class="form-control" id="exampleInputEmail2" placeholder="もう一度"/><br>
+                               </div>
+				<br>
+				                      <button type="submit" class="btn btn-info">登録</button>
+    </form> 
+{% endblock %}  

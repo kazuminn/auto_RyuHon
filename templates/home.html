@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+
+
+{% block kotoba %}
+
+<FONT color="red"><p>{{ koto }}</p></FONT>
+
+
+{% endblock  %}
+{% block main %}
+
+<br>
+<br>
+<button type="button"  style="WIDTH: 250px; HEIGHT: 40px"  onclick="location.href='https://ryuhon.ksit.xyz/register'" class="btn btn-info">登録</button>
+<br>
+<br>
+<br>
+<br>
+
+<button type="button"  style="WIDTH: 250px; HEIGHT: 40px" onclick="location.href='https://ryuhon.ksit.xyz/rule'" class="btn btn-info">このサイト・ポリシーについて</button>
+<br>
+<br>
+<br>
+<br>
+<button type="button"  style="WIDTH: 250px; HEIGHT: 40px" onclick="location.href='https://ryuhon.ksit.xyz/deletion'" class="btn btn-info">アカウントを削除する</button>
+
+<br>
+<div align=left ><p>注意:登録前に必ずポリシーをお読みください</p></div>
+{% endblock %}
